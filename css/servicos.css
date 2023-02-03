@@ -1,0 +1,112 @@
+
+.service_section .container {
+    padding: 0 50px;
+}
+
+.service_detail h2 {
+    text-transform: uppercase;
+    color: #0c0b09;
+    font-weight: bold;
+}
+
+.service_detail h3 {
+    text-transform: uppercase;
+    color: #254a93;
+    position: relative;
+}
+
+.service_detail h3::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 1.5px;
+    width: 45px;
+    background-color: #36bb25;
+}
+
+.service_section .service_img-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.service_section .service_img-container .service_img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    height: 325px;
+    background-size: cover;
+}
+
+.service_img-container .service_img-box.i-box-1 {
+    width: 50%;
+    background-image: url(../images/controle_acesso.jpeg);
+}
+
+.service_img-container .service_img-box.i-box-2 {
+    width: 50%;
+    background-image: url(../images/recepcionista.jpeg);
+}
+
+.service_img-container .service_img-box.i-box-3 {
+    width: 50%;
+    background-image: url(../images/jardineiro.jpeg);
+}
+
+.service_img-container .service_img-box.i-box-4 {
+    width: 50%;
+    background-image: url(../images/servigerais.webp);
+}
+
+.service_img-container .service_img-box.i-box-5 {
+    width: 50%;
+    background-image: url(../images/manobrista.jpeg);
+}
+
+.service_img-container .service_img-box.i-box-6 {
+    width: 50%;
+    background-image: url(../images/investigador.jpeg);
+}
+
+.service_img-container .service_img-box.i-box-7 {
+    width: 50%;
+    background-image: url(../images/cameras.jpeg);
+}
+
+.service_img-container .service_img-box.i-box-8 {
+    width: 50%;
+    background-image: url(../images/manutencao.jpeg);
+}
+
+.service_section .service_img-container a,
+.service_section .service_img-container a:hover {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 40px;
+}
+
+.service_section .service_img-container .service_img-box:hover {
+    cursor: pointer;
+}
+
+.service_section .service_img-container .service_img-box:hover a {
+    background-color: #2561db;
+}
+
+.service_btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.service_btn a,
+.service_btn a:hover {
+    text-transform: uppercase;
+    color: #0c0b09;
+}
+
+.service_btn a img {
+    width: 25px;
+}

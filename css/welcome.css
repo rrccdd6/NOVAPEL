@@ -1,0 +1,48 @@
+
+.welcome_section {}
+
+.welcome_section .col-md-6 {
+    padding: 0 4%;
+}
+
+.welcome_detail {
+    width: 75%;
+}
+
+.welcome_detail h2 {
+    text-transform: uppercase;
+    color: #0c0b09;
+    font-weight: bold;
+}
+
+.welcome_detail h3 {
+    text-transform: uppercase;
+    color: #254a93;
+    position: relative;
+}
+
+.welcome_detail h3::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 1.5px;
+    width: 140px;
+    background-color: #36bb25;
+}
+
+.welcome_detail h2,
+.welcome_detail p,
+.welcome_detail .welcome_detail-btn {
+    margin-top: 25px;
+}
+
+.welcome_section .welcome_detail-btn a,
+.welcome_section .welcome_detail-btn a:hover {
+    text-transform: uppercase;
+    color: #0c0b09;
+}
+
+.welcome_section .welcome_detail-btn a img {
+    width: 25px;
+}

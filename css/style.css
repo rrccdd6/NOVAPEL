@@ -1,0 +1,133 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #fffcf4;
+}
+
+.layout_padding {
+    padding: 75px 0;
+}
+
+.layout_padding-top {
+    padding-top: 75px;
+}
+
+.layout_padding-bottom {
+    padding-bottom: 75px;
+}
+
+.story_section {
+    padding: 0 4%;
+}
+
+.story_section .container-fluid {
+    -webkit-box-shadow: 1px -1px 24px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px -1px 24px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px -1px 24px -13px rgba(0, 0, 0, 0.75);
+}
+
+.story_section .col-md-6 {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: #fcfcfc;
+}
+
+.story_detail {
+    margin-left: 40px;
+}
+
+.story_detail h2 {
+    text-transform: uppercase;
+    color: #0c0b09;
+    font-weight: bold;
+}
+
+.story_detail h3 {
+    text-transform: uppercase;
+    color: #254a93;
+    margin: 0;
+}
+
+.story_detail {
+    width: 85%;
+}
+
+.story_detail .story_detail-btn {
+    margin-top: 25px;
+}
+
+.story_section .story_detail-btn a,
+.story_section .story_detail-btn a:hover {
+    text-transform: uppercase;
+    color: #0c0b09;
+}
+
+.story_section .story_detail-btn a img {
+    width: 25px;
+}
+
+.container2 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.service_detail_2 h2 {
+    margin-top: 3em;
+    text-transform: uppercase;
+    color: #0c0b09;
+    font-weight: bold;
+    text-align: center;
+}
+
+.a2 {
+    text-transform: uppercase;
+    color: #254a93;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.contact_form-container {
+    background-image: url(../images/guards.jpg);
+    background-size: cover;
+}
+
+.contact_form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact_form-container .contact_box {
+    background-color: #fff;
+    padding: 35px 40px;
+    width: 50%;
+    height: 60%;
+    margin: 100px 50px;
+}
+
+.contact_form-container form input,
+.contact_form-container form input:focus,
+.contact_form-container form input:active {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #00cc99;
+    width: 85%;
+    margin-top: 12px;
+    outline: none;
+}
+
+.contact_form-container form button {
+    border: none;
+    background-color: #254a93;
+    color: #fff;
+    padding: 8px 20px;
+    margin-top: 15px;
+}
+
+.contact_section .row .col-md-6 {
+    padding: 0;
+}

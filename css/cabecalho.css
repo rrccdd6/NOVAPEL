@@ -1,0 +1,69 @@
+.header_section {
+    font-family: "Roboto", sans-serif;
+    background-color: #1f233e;
+    color: #fff;
+    min-height: 90px;
+    padding: 1% 0;
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.btn,
+.btn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.custom_nav-container .navbar-toggler {
+    border-color: #fff;
+    outline: none;
+}
+
+.custom_nav-container .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../images/menu.png);
+}
+
+.custom_nav-container .nav_search-btn {
+    background-image: url(../images/search-icon.png);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position-y: 7px;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: none;
+}
+
+.navbar {}
+
+.nav-link:hover {
+    color: #fefefe;
+}
+
+.logo_box {
+    width: 80px;
+}
+
+.logo_box img {
+    width: 100%;
+}
+
+.call_to_btn {
+    display: inline-block;
+    color: #fefefe;
+    padding: 10px 35px;
+    background-color: #f6bb08;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    border-radius: 0;
+}

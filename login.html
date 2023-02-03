@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="Página de login para o sistema." />
+    <meta name="author" content="Ricardo Rodrigues" />
+
+    <title>GRUPO NOVA PEL</title>
+
+    <!-- Estilo slide -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- Estilo de Fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,500&display=swap" rel="stylesheet" />
+
+    <!-- Estilos divididos -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/cabecalho.css" rel="stylesheet" />
+    <link href="css/info.css" rel="stylesheet" />
+    <link href="css/rodape.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+
+    <!-- Estilo responsivo -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+<!-- Cabeçalho -->
+
+<body>
+    <header class="header_section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="index.html">
+                    <div class="logo_box"> <img src="images/pel1.png" alt="Logo empresa segurança patrimonial" /></div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mr-2">
+                        <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Sobre Nós </a></li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Serviços</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="contact.html">Contato</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="login.html">Área Restrita <span class="sr-only">(current)</span></a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Final do Cabeçalho -->
+
+    <div class="d-md-flex half">
+
+        <div class="contents">
+
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-12">
+                        <div class="form-block mx-auto">
+                            <div class="text-center mb-5">
+                                <h3>Área Restrita</h3>
+                                <p class="mb-4"> Área destinada aos funcionários do grupo Nova Pel</p>
+                            </div>
+                            <form action="/painelprincipal.html" method="get" id="formulario" onsubmit="javascript:return validation(usuario.value,senha.value)">
+                                <div class="form-group first">
+                                    <label for="username">Usuário</label>
+                                    <input type="text" class="form-control" placeholder="Seu usuário" id="usuario">
+                                </div>
+                                <div class="form-group last mb-3">
+                                    <label for="password">Senha</label>
+                                    <input type="password" class="form-control" placeholder="Sua senha" id="senha">
+                                </div>
+
+                                <div class="d-sm-flex mb-5 align-items-center">
+                                    <label class="control control--checkbox mb-3 mb-sm-0"><span class="caption">Lembrar me</span>
+                            <input type="checkbox" checked="checked"/>
+                            <div class="control__indicator"></div>
+                            </label>
+                                    <span class="ml-auto"><a href="#" class="forgot-pass">Esqueceu a senha?</a></span>
+                                </div>
+
+                                <input type="submit" value="Entrar" onclick="submit_by_id()" class="btn btn-block btn-primary">
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Informações -->
+    <section class="info_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-6 address_container">
+                    <div>
+                        <h3>Faça Parte da nossa Equipe!</h3>
+                        <br>
+                        <h3> Envie seu melhor Currículo para: </h3>
+                        </a>
+                        <a href="mailto:selecao@gruponovapel.com.br">
+                            <img src="images/mail.png" alt="">
+                            <span> selecao@gruponovapel.com.br </span>
+                        </a>
+                    </div>
+                </div>
+                <div class=" col-md-6 address_container">
+                    <div>
+                        <h3> Endereço: </h3>
+                        <div class="address_link-container">
+                            <a href="">
+                                <img src="images/location.png" alt="">
+                                <span> Av. Dr. Mario Guimarães, 428 
+                                       Condominio Edifício Le Monde Office Life
+                                       Centro, Nova Iguaçu - RJ
+                                       CEP 26255-230
+                                </span>
+                            </a>
+                            <a href="tel://2135849360">
+                                <img src="images/phone.png" alt="">
+                                <span> Tel: (21) 3584-9360</span>
+                            </a>
+                            <a href="mailto:comercial@gruponovapel.com.br">
+                                <img src="images/mail.png" alt="">
+                                <span> Email: comercial@gruponovapel.com.br </span>
+                            </a>
+                            <a href="https://wa.me/5521995314645">
+                                <img src="images/phone.png" alt="">
+                                <span> Fale conosco pelo WhatsApp </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Final Informações -->
+
+
+    <!-- Rodapé -->
+    <section class="container-fluid footer_section">
+        <p> Copyright &copy; 2022 All Rights Reserved By <a href="https://www.linkedin.com/in/ricardorodriguesf/">Ricardo Rodrigues</a></p>
+    </section>
+
+    <!-- Final do Rodapé -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

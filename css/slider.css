@@ -1,0 +1,106 @@
+
+.slider_section {
+    height: calc(100vh - 90px);
+}
+
+.slider_section .carousel-indicators {
+    top: 50%;
+    left: -75px;
+    transform: translateY(-50%);
+    display: block;
+    bottom: unset;
+    right: unset;
+}
+
+.slider_section .carousel-indicators li {
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    margin: 0 auto;
+}
+
+.slider_section .carousel-indicators .active {
+    width: 24px;
+    height: 24px;
+    background-color: #2561db;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.slider_section .slider_box {
+    display: flex;
+    position: relative;
+    height: calc(100vh - 90px);
+    background-image: url(../images/cameras7.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider_section .slider_box .fixed_company-detail {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.slider_section .slider_box .fixed_company-detail p {
+    width: 12px;
+    text-align: center;
+    word-break: break-word;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slider_section .slider_box .slider-detail {
+    color: #fff;
+    width: 60%;
+    margin-top: 14%;
+    margin-left: 20%;
+}
+
+.slider_section .slider_box .slider-detail .slider_detail-heading h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.slider_section .slider_box .slider-detail .slider_detail-heading h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.slider_section .slider_box .slider-detail .slider_detail-text {
+    width: 55%;
+    color: #f8fafd;
+}
+
+.slider_section .slider_box .slider-detail .slider_detail-btn {
+    display: flex;
+}
+
+.slider_section .slider_box .slider-detail .slider_detail-btn a {
+    margin-top: 28px;
+    padding: 16px 20px;
+    background-color: #2561db;
+    color: #fff;
+}
