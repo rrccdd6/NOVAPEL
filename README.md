@@ -1,3 +1,3 @@
 # SITE_NOVA_PEL
 
-Criação de um site com um sistema de cadastro e consultas em NODEjs
+Criação de um site com um sistema de cadastro de funcionários e consultas. 

@@ -1,61 +1,43 @@
-// VARIÁVEIS
+var usuarios = [
+  {
+    login: 'admin',
+    senha: '123',
+  },
+  {
+    login: 'user1',
+    senha: '456',
+  },
+  {
+    login: 'user2',
+    senha: '789',
+  }
+];
 
-//var usuario = document.getElementById("usuario").value;
-//var senha = document.getElementById("senha").value;
-//var login = $("input:usuario")
-//var psw = $("input:senha")
+  // VARIÁVEIS
+  var username = "";
+  var password = "";
+  var nomeDoUsuario = "";
 
-// FUNÇAO SUBMIT
+  // FUNÇAO SUBMIT
+  function submitForm() {
+    username = document.getElementById("usuario").value;
+    password = document.getElementById("senha").value;
 
-//function submit_by_id() {
+    if (validateCredentials()) {
+      document.getElementById("formulario").submit();
+      alert(" Usuário: " + username + " Senha: " + password + " ENTRADA AUTORIZADA");
+    }
+  }
 
-   // var usuario = document.getElementById("usuario").value;
-   // var senha = document.getElementById("senha").value;
+  // VALIDAÇÃO DE USUARIO E SENHA 
 
-   // if (validation(true)) // CHAMADA DE VALIDAÇAO
-   // {
-  //      document.getElementById("formulario").submit();
-   //     alert(" Usuário : " + usuario + " Senha : " + senha + " " + " ENTRADA AUTORIZADA");
-  //  }
-//}
-
-// VALIDAÇÃO DE USUARIO E SENHA 
-
-//function validation() {
-
- //   var usuario = document.getElementById("usuario").value;
-//var senha = document.getElementById("senha").value;
-
-//    if (usuario === '' || senha === '') {
- //       alert("ACESSO NEGADO");
- //       return false;
- //   } else {
-  //      window.localStorage
- //       return true;
- //   }
-//}
-
-   // VARIÁVEIS
-   var username = "";
-   var password = "";
-
-   // FUNÇAO SUBMIT
-   function submitForm() {
-     username = document.getElementById("usuario").value;
-     password = document.getElementById("senha").value;
-
-     if (validateCredentials()) {
-       document.getElementById("formulario").submit();
-       alert(" Usuário: " + username + " Senha: " + password + " ENTRADA AUTORIZADA");
-     }
-   }
-
-   // VALIDAÇÃO DE USUARIO E SENHA 
-   function validateCredentials() {
-     if (username === '' || password === '') {
-       alert("ACESSO NEGADO. Por favor, preencha todos os campos.");
-       return false;
-     } else {
-       return true;
-     }
-   }
+  function validateCredentials() {
+    if (username === '' || password === '') {
+      alert("ACESSO NEGADO. Por favor, preencha todos os campos.");
+      return false;
+    } else {
+      nomeDoUsuario = username;
+      return true;
+    }
+  }
+  
