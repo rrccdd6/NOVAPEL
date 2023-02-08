@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Site Metas -->
     <meta name="keywords" content="" />
-    <meta name="description" content="Página para consulta de diversas funcionalidades." />
+    <meta name="description" content="Página para cadastro de posto de serviço." />
     <meta name="author" content="Ricardo Rodrigues" />
 
     <title>GRUPO NOVA PEL</title>
@@ -55,60 +55,69 @@
     <!-- Inicio Formulário -->
     <section class="form-control">
         <div class="formulario">
-            <form action="" method="post" id="validate">
-                <label>Tipo de consulta</label>
-                <select name="tipodeconsulta" class="p" onchange="adicionaCampo()">
-                    <option>Selecione</option>
-                    <option value="Funcionários">Funcionários</option>
-                    <option value="Férias">Férias</option>
-                    <option value="Horas Extras">Horas Extras</option>
-                    <option value="Folha de Ponto">Folha de Ponto</option>
-                </select>
+
+            <form action="" method="post" id="validate" >
+
+                <label>Nome do Funcionario</label>
+                <input name="nome" type="text" class="g">
                 <br>
-                <label id="nomeFuncionarioLabel" style="display:none;">Nome do Funcionário</label>
-                <input id="nomeFuncionarioInput" name="nome" type="text" class="g" style="display:none;">
+                <label>Data Inicio</label>
+                <input name="datainicio" type="text" class="p" id="datepicker1">
                 <br>
-                <label id="postoServicoLabel" style="display:none;">Posto de Serviço</label>
-                <select id="postoServicoSelect" style="display:none;">
-                  <option value="Memorial">Memorial</option>
-                  <option value="Marcos Moraes">Marcos Moraes</option>
-                  <option value="Condomínio">Soul Península</option>
-                </select>
-                <br>
-                <label id="mesesLabel" style="display:none;">Mês</label>
-                <select id="mesesSelect" style="display:none;">
-                    <option value="Janeiro">Janeiro</option>
-                    <option value="Fevereiro">Fevereiro</option>
-                    <option value="Março">Março</option>
-                    <option value="Abril">Abril</option>
-                    <option value="Maio">Maio</option>
-                    <option value="Junho">Junho</option>
-                    <option value="Julho">Julho</option>
-                    <option value="Agosto">Agosto</option>
-                    <option value="Setembro">Setembro</option>
-                    <option value="Outubro">Outubro</option>
-                    <option value="Novembro">Novembro</option>
-                    <option value="Dezembro">Dezembro</option>
-                </select>
+                <label>Data Final</label>
+                <input name="datafinal" type="text" class="p" id="datepicker2">
                 <br>
                 <br>
-                <input type="submit" value="Consultar" data-toggle="tooltip" data-placement="top" title="Consultar Férias do posto de serviço">
+                <input type="submit" value="Cadastrar Férias">
             </form>
             <br>
             <br>
             <br>
         </div>
     </section>
-
-    
     <!-- Final Formulário -->
 
     <!-- Final do Rodapé -->
-    <script src="js/adicionacampo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      $("#validate").validate({
+        rules: {
+          nome: {
+            required: true,
+            minlength: 2
+          },
+          datainicio: {
+            required: true
+          },
+          datafinal: {
+            required: true
+          }
+        },
+        messages: {
+          nome: {
+            required: "O campo Nome do Posto é obrigatório",
+            minlength: "O nome deve ter pelo menos 2 caracteres"
+          },
+          datainicio: {
+            required: "O campo Data de Início é obrigatório"
+          },
+          datafinal: {
+            required: "O campo Data de Início é obrigatório"
+          }
+        }
+      });
+    });
+  </script>
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.zebra-datepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+
 
 </body>
 
